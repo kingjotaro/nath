@@ -1,5 +1,5 @@
 const track = document.getElementById("image-track");
-const audio = new Audio('caminho/do/arquivo/de/audio.mp3'); // Defina o caminho do seu arquivo de áudio
+const audio = new Audio('./images/mulher.mp3'); 
 
 
 function playMusic() {
