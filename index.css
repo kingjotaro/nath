@@ -1,0 +1,110 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  margin: 0rem;
+  overflow: hidden;
+  position: relative; 
+}
+
+#twitch-link {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10000; /* Garante que o link esteja sempre na frente */
+  color: white; /* Cor do texto do link */
+  text-decoration: none; /* Removendo sublinhado do link */
+  font-family: "Rubik", sans-serif; /* Fonte do texto */
+  font-weight: 500; /* Peso da fonte */
+  padding: 10px 20px; /* Espaçamento interno do link */
+  border-radius: 6px; /* Arredondamento das bordas */
+  background-color: rgba(255, 255, 255, 0.05); /* Cor de fundo com transparência */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Borda com transparência */
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: background-color 400ms, border-color 400ms; /* Transições suaves */
+}
+
+#twitch-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo ao passar o mouse */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borda ao passar o mouse */
+}
+
+#twitch-link > i {
+  color: rgb(94, 106, 210); /* Cor do ícone */
+}
+
+#twitch-link > span {
+  height: 20px;
+  line-height: 20px;
+  margin-left: 5px; /* Espaçamento entre o ícone e o texto */
+}
+  
+  #image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%); 
+    user-select: none; /* -- Prevent image highlighting -- */
+  }
+  
+  #image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+  }
+  
+
+  
+  body.menu-toggled > .meta-link > span {
+    color: rgb(30, 30, 30);
+  }
+  
+  #source-link {
+    bottom: 60px;
+  }
+  
+  #source-link > i {
+    color: rgb(94, 106, 210);
+  }
+  
+  #yt-link > i {
+    color: rgb(239, 83, 80);
+  }
+  
+  .meta-link {
+    align-items: center;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    bottom: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;  
+    display: inline-flex;
+    gap: 5px;
+    left: 10px;
+    padding: 10px 20px;
+    position: fixed;
+    text-decoration: none;
+    transition: background-color 400ms, border-color 400ms;
+    z-index: 10000;
+  }
+  
+  .meta-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .meta-link > i, .meta-link > span {
+    height: 20px;
+    line-height: 20px;
+  }
+  
+  .meta-link > span {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+  }
